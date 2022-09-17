@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+		<title>Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="body_produtos">
+        <header>
+			<div class="caixa">
+                <h1><img src="logo.png" id="img_titulo"></h1>
+                <nav class="nav-botao">
+                    <ul class="nav-botao-ul">
+                        <li><a class="nav-botao-text" href="index.html">Home</a></li>
+                        <li><a class="nav-botao-text" href="produtos.html">Produtos</a></li>
+                        <li><a class="nav-botao-text" href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+			</div>
+        </header>
+
+        <main class="form-contato">
+            <form>
+                <fieldset>
+                    <label for="nomesobrenome" class="label_entradas">Nome e Sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="forms_entradas" required>
+
+                    <label for="Email" class="label_entradas">Email</label>
+                    <input type="email" id="Email" class="forms_entradas" required placeholder="seuemail@dominio.com">
+
+                    <label for="Telefone" class="label_entradas">Telefone</label>
+                    <input type="tel" id="Telefone" class="forms_entradas" required placeholder="(DD) 9 XXXX-XXXX">
+
+                    <label for="mensagem" class="label_entradas">Mensagem</label>
+                    <textarea cols="30" rows="10" id="mensagem" class="forms_entradas" required></textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <legend class="label_entradas" id="radio_title">Como Prefere nosso contato?</legend>
+                        <div class="radio-flex">
+                            <div class="radio-flex-ex">
+                                <input type="radio" value="Email" id="radio-e-mail" name="contato" class="imput_contato">
+                                <label for="radio-e-mail" class="radio_contato">Email</label>
+                            </div>
+                            <div class="radio-flex-ex">
+                                <input type="radio" value="Telefone" id="radio-telefone" name="contato" class="imput_contato">
+                                <label for="radio-telefone" class="radio_contato" >Telefone</label>
+                            </div>
+                            <div class="radio-flex-ex">
+                                <input type="radio" value="WhataApp" id="radio-WhataApp" name="contato" class="imput_contato" checked>
+                                <label for="radio-WhataApp" class="radio_contato">WhataApp</label>
+                            </div>
+                        </div>
+                </fieldset>
+
+                <fieldset>
+                    <p class="label_entradas" id="titulo_turn">Qual horário prefere ser atendido</p>
+                    <select class="radio_contato">
+                        <option >Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+
+                    <label id="check_email" class=label_entradas><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+                    <input type="submit" value="Enviar Formulário" id="submeter">
+                </fieldset> 
+            </form>
+
+            <table class="table-horario">
+                <thead class="table-horario-titulo">
+                    <tr>
+                        <th class="table-horario-celulas">Dia</th>
+                        <th class="table-horario-celulas">Horário</th>
+                    </tr>
+                 </thead>
+                <tbody class="table-horario-body">
+                    <tr>
+                        <td class="table-horario-celulas">Segunda</td>
+                        <td class="table-horario-celulas">8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td class="table-horario-celulas">Quarta</td>
+                        <td class="table-horario-celulas">8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td class="table-horario-celulas">Sexta</td>
+                        <td class="table-horario-celulas">8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>     
+        </main>
+    </body>
+    <footer>
+        <img src="logo-branco.png">
+        <a href="https://www.linkedin.com/in/felipe-santos-bronze-05a080194"><img class="linkedin" src="linkedin.png"></a>
+        <p class="copyright"> &copy; Copyright Barbearia Alura - 2022</p>
+    </footer>
+</html>

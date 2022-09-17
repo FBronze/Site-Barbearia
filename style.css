@@ -1,0 +1,524 @@
+/* CCS da NAV de todas as paginas */
+
+header {
+    padding: 20px 0;
+    background: url("fundo_main.jpg");
+    border-bottom: 3px solid black;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 60px;
+    right: 150px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration:none;
+    border-radius: 50px;
+    padding: 10px;
+    background: white;
+}
+
+nav a:hover {
+    background: #71ccf9;
+}
+
+#img_titulo {
+    width: 90px;
+    background: white;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+/* CCS da pagina de home */
+
+.sobre {
+    position: relative;
+    background: white;
+}
+
+.mapa {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.text-div {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.titulo_sobre {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.text {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+}
+
+.Beneficios{
+    padding: 3px;
+    text-align: center;
+    margin: 9px;
+}
+
+.Beneficios_lista {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    width: 30%;
+    border: 2px solid #000000;
+    border-radius: 70px;
+}
+
+.Beneficios_lista:hover {
+    border-color: #ff0000;
+    color: #0080c0;
+    font-weight: bolder;
+}
+
+.text_b {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0;
+}
+
+.img_esq{
+    width: 150px;
+    animation: girar_esq  5s linear alternate infinite;
+}
+
+.img_dir{
+    width: 150px;
+    animation: girar_dir  5s linear alternate infinite;
+}
+
+#text_marcados{
+    font-style:italic;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.iframe_home {
+    text-align: center;
+    padding: 2px;
+}
+
+#maps {
+    border:black solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.iframe_v {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.youtube-video {
+    border:black solid 20px;
+    border-radius: 20px;
+}
+
+@keyframes girar_dir {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+  @keyframes girar_esq {
+    0% {
+        transform: rotate(360deg)
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
+
+ .banner-home {
+    width: 100%;
+ }
+
+/* CCS da pagina de produtos */
+.produtos_caixas {
+    background: white;
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos_caixas{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin:0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.produtos li:hover {
+    border-color:#C78C19;
+    font-size: 40px;
+}
+
+.produtos li:active {
+    border-color:#28c719
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+/* CCS do rodapé de todas as paginas */
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: aliceblue;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/* CCS da pagina contatos */
+
+.form-contato {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.label_entradas {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    accent-color: #009d27;
+}
+
+.forms_entradas {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 400px;
+    font-weight: bolder;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 8px;
+    display: block;
+    margin: 0 0 20px;
+}
+
+#submeter {
+    background:#71ccf9;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 0 0 10px;
+    width: 400px;
+    height: 40px;
+    display: block;
+    transition: 1s all;
+}
+
+.radio_contato {
+    display: inline;
+    font-size: 15px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#radio_title {
+    font-weight: bold;
+}
+
+.imput_contato {
+    margin: 0 0 0 20px;
+    accent-color: #009d27;
+}
+
+#check_email {
+    margin: 20px 0 20px 0;
+}
+
+#titulo_turn {
+    margin: 20px 0 20px 0;
+}
+
+.select_turn {
+    border: 1px solid #000000;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+#submeter:hover {
+    background: #f1a65a;
+    transform: scale(1.05);
+}
+
+.forms_entradas:focus { 
+    background: #71ccf9; 
+}
+
+.table-horario {
+    margin: 20px;
+    width: 200px;
+}
+.table-horario-titulo {
+    font-weight: bolder;
+    font-size: 15px;
+    background: #f1a65a;
+}
+.table-horario-celulas {
+    border: 1px solid #000000;
+    padding: 5px;
+    align-items: center;
+}
+
+.table-horario:hover {
+    transform: scale(1.02);
+    border: #C78C19;
+}
+
+.linkedin {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.radio-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Responsividade Mobile*/
+
+@media screen and (max-width: 1000px) {
+    .caixa,  .iframe_home, .text-div, .iframe_home, .Beneficios, .mapa, .youtube-video, #maps, .produtos, .form-contato, .youtube-video {
+        width: auto;
+    }   
+    
+    .youtube-video {
+        width: 60%;
+    }
+
+    #maps {
+        margin: 10px 20px;
+        width: 60%;
+    }
+
+    #img_titulo {
+        margin-left: 10px;
+        width: 50px;
+    }
+    
+
+    .nav-botao-text {
+        font-size: 13px;
+        padding: 7px;
+        border: #000000 2px solid;
+    }
+
+    .nav-botao {
+        top: 34px;
+        right: 8%;
+    }
+
+    .text {
+        margin: 10px;
+    }
+
+    nav li {
+        margin: 0 0 0 6px;
+    }
+
+    .img_dir {
+        width:  60px;
+        display: block;
+        position: relative;
+        align-items: center;
+    }
+
+    .img_esq {
+        width:  60px;
+        display: block;
+        position: relative;
+        
+    }
+
+    .Beneficios_lista {
+        width: auto;
+        display: inline-block;
+        margin: 20px;
+        border: 0px;
+    }
+
+    .Beneficios_div {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: center
+    }
+
+    .text_b {
+        font-size: 15px;
+        border: #000000 1px solid;
+        border-radius: 20px;
+        padding: 12px;
+    }
+    
+    .produtos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .produtos_caixas {
+        margin-bottom: 50px;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forms_entradas {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    #submeter {
+        width: 80%;
+    }
+
+    .form-contato {
+        margin: 15px;
+    }
+
+    .label_entradas {
+        display: block;
+    }
+
+    .form-metodo-tx {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-metodo-bt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radio-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radio-flex-ex {
+        margin: 6px 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .caixa,  .iframe_home, .text-div, .iframe_home, .Beneficios, .mapa, .youtube-video, .produtos, .form-contato {
+        width: auto;
+    }  
+
+    #img_titulo {
+        margin-left: 10px;
+        width: 50px;
+    }
+
+    .nav-botao-text {
+        font-size: 9px;
+        padding: 4px;
+        border: #000000 2px solid;
+    }
+
+    .nav-botao {
+        top: 34px;
+        right: 30px;
+    }
+
+    .text {
+        margin: 10px;
+    }
+
+    nav li {
+        margin: 0 0 0 6px;
+    }
+
+    .titulo_sobre {
+        margin: 30px 10px;
+    }
+
+    .img_dir {
+        width:  10px;
+        display: block;
+        position: relative;
+        align-items: center;
+    }
+
+    .img_esq {
+        width:  10px;
+        display: block;
+        position: relative; 
+    }
+
+    .forms_entradas {
+        font-size: 12px;
+    }
+
+}   
